@@ -14,11 +14,10 @@ import org.springframework.lang.NonNull;
 public class listItem {
     
     private long id; 
-    private int num;
     @NonNull
     private String tname;
     private boolean status;
-    private Date deadline;
+    private String deadline;
     public listItem() {
     }
 
@@ -38,14 +37,6 @@ public class listItem {
         this.id = id;
     }
 
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
-
     public String getTname() {
         return tname;
     }
@@ -62,11 +53,11 @@ public class listItem {
         this.status = status;
     }
 
-    public Date getDeadline() {
+    public String getDeadline() {
         return deadline;
     }
 
-    public void setDeadline(Date deadline) {
+    public void setDeadline(String deadline) {
         this.deadline = deadline;
     }
 
